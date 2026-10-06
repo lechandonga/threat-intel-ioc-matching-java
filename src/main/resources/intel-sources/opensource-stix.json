@@ -1,0 +1,38 @@
+{
+  "type": "bundle",
+  "id": "bundle--local-fixture",
+  "objects": [
+    {
+      "type": "identity",
+      "id": "identity--local",
+      "name": "local opensource feed"
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--sha256-clean",
+      "pattern": "[file:hashes.'SHA-256' = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']",
+      "labels": ["benign"],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "created": "2026-01-01T00:00:00Z",
+      "name": "known-good system binary"
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--domain",
+      "pattern": "[domain-name:value = 'stix-bad.example.org']",
+      "labels": ["malicious-activity"],
+      "valid_from": "2026-09-01T00:00:00Z",
+      "created": "2026-09-01T00:00:00Z",
+      "name": "phishing domain"
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--cidr",
+      "pattern": "[ipv4-addr:value = '172.16.5.0/24']",
+      "labels": ["anomaly"],
+      "valid_from": "2026-09-05T00:00:00Z",
+      "created": "2026-09-05T00:00:00Z",
+      "name": "anomalous subnet"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "indicators": [
+    {
+      "type": "sha256",
+      "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verdict": "malicious",
+      "severity": "high",
+      "firstSeen": "2026-09-01T00:00:00Z",
+      "description": "trojan sample"
+    },
+    {
+      "type": "domain",
+      "value": "evil-example.com",
+      "verdict": "malicious",
+      "severity": "high",
+      "firstSeen": "2026-09-10T00:00:00Z"
+    },
+    {
+      "type": "cidr",
+      "value": "10.10.0.0/16",
+      "verdict": "suspicious",
+      "firstSeen": "2026-09-15T00:00:00Z"
+    },
+    {
+      "type": "ip",
+      "value": "203.0.113.7",
+      "verdict": "malicious",
+      "validFrom": "2026-01-01T00:00:00Z",
+      "validUntil": "2026-06-01T00:00:00Z",
+      "description": "expired C2 IP (boundary test fixture)"
+    },
+    {
+      "type": "domain",
+      "value": "future.badnet.test",
+      "verdict": "malicious",
+      "validFrom": "2099-01-01T00:00:00Z",
+      "description": "not yet valid fixture"
+    }
+  ]
+}

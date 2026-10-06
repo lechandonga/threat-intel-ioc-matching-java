@@ -1,0 +1,6 @@
+# type|value|verdict|severity|validFrom|validUntil|firstSeen|description
+sha256|e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855|suspicious|medium|||2026-09-20T00:00:00Z|conflicts with vendor-a on same hash
+domain|cdn.evil-example.com|clean|low|||2026-09-21T00:00:00Z|child domain independently judged
+md5|d41d8cd98f00b204e9800998ecf8427e|malicious|high|||2026-09-22T00:00:00Z|
+ip|198.51.100.23|malicious|critical|||2026-09-23T00:00:00Z|single malicious IP near CIDR edge
+cidr|198.51.100.0/24|suspicious|medium|||2026-09-23T01:00:00Z|suspicious neighbor subnet
